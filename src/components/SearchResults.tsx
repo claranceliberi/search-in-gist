@@ -25,6 +25,7 @@ const SearchResults = ({ gists, loading, error, username }: Props) => {
           </p>
         </div>
       )}
+      {/* show only when gists are not empty ie. gists are successfully fetched */}
       {gists.length > 0 && (
         <div className="results">
           <div className="alert alert-success">

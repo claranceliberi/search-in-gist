@@ -25,7 +25,10 @@ const Main = (props: Props) => {
     try {
       const URL = AllGistsUrl(username);
       const response = await fetch(URL);
+      
+      // if response is not ok, throw an error
       if (!response.ok) throw new Error(response.statusText);
+
       const data = await response.json();
       setGists(data);
       if (data.length === 0) setError(true);

@@ -15,7 +15,9 @@ const GistForks = ({ forksUrl }: Props) => {
     setForks([]);
     try {
       const response = await fetch(url);
+      // if response is not ok, throw an error
       if (!response.ok) throw new Error(response.statusText);
+      
       const data = await response.json();
       setForks(data.slice(0, 3));
     } catch (error) {
