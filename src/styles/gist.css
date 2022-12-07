@@ -1,0 +1,81 @@
+.gist {
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  flex-wrap: wrap;
+}
+
+.gist:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gist__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.gist__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0.5rem;
+  max-width: 600px;
+}
+
+.gist__date {
+  font-size: 0.8rem;
+  color: #a0a0a0;
+}
+
+.gist_body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.gist__file-size {
+  font-size: 0.8rem;
+  color: #a0a0a0;
+  margin: 0 0.5rem;
+  text-align: right;
+}
+
+.gist__file-tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+
+.gist-forks {
+  margin: 1rem 1rem 0.5rem 0rem;
+}
+
+.gist-forks > h4 {
+  font-size: 1.2rem;
+  color: #a0a0a0;
+  margin: 0 0.5rem;
+}
+
+.gist-forks > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.gist-forks > div img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
